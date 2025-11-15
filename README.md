@@ -1,135 +1,89 @@
-# Turborepo starter
+# 🏗️ Industrial Forge Web  
+### A flagship construction website template — React + Vite + Tailwind + Framer Motion
 
-This Turborepo starter is maintained by the Turborepo core team.
+Industrial Forge Web is a **premium, open-source, production-ready template** designed for construction companies, architecture studios, agencies, or modern industrial businesses.
 
-## Using this example
+Fully animated, minimalistic, and inspired by **Apple, Byredo, Aesop**, with ultra-clean layouts and cinematic transitions.
 
-Run the following command:
+---
 
-```sh
-npx create-turbo@latest
-```
+## 🚀 Features
 
-## What's inside?
+- ⚡ **Vite** — ultra-fast bundler  
+- 🎨 **TailwindCSS** — custom Apple/Byredo-inspired design tokens  
+- 🎞️ **Framer Motion** — cinematic animations & smooth transitions  
+- 🌗 **Dark/Light Mode** — persistent theme with toggle  
+- ⏳ **Preloader animation**  
+- 🧩 **Smooth scroll & parallax interactions**  
+- 📂 Clean, modular architecture  
+- 🖼️ Dynamic Portfolio grid with hover effects  
+- 🌐 100% responsive  
+- 🧱 Optional Supabase integration (Admin Panel ready)  
+- 📦 Ready for deployment on Vercel / Netlify
 
-This Turborepo includes the following packages/apps:
+---
 
-### Apps and Packages
+## 🖼️ Preview
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+<img width="1920" height="951" alt="brave_ALHEVCLzMD" src="https://github.com/user-attachments/assets/f7503957-c227-4122-8c1e-9b1c91510b8d" />
+<img width="1920" height="951" alt="brave_lC6OTxKtNf" src="https://github.com/user-attachments/assets/4680ca9f-2ebf-478c-9f69-081a6d10da4b" />
+<img width="1920" height="951" alt="brave_n2y5dDrMLu" src="https://github.com/user-attachments/assets/3787cb4a-71e8-4bf2-aa90-4574d336386a" />
+<img width="1920" height="951" alt="brave_n2Ynzx1niP" src="https://github.com/user-attachments/assets/a8bac5d4-6a21-48b1-bb63-574ed19b5c03" />
+<img width="1920" height="951" alt="brave_YNOjYTFCaW" src="https://github.com/user-attachments/assets/fcfa850a-a254-4929-b512-8f2430d7e71b" />
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+---
 
-### Utilities
+## 🛠️ Installation
 
-This Turborepo has some additional tools already setup for you:
+git clone https://github.com/stefanutc1/Industrial-Forge-Web
+cd Industrial-Forge-Web/apps/web
+npm install
+npm run dev
+Local dev server will start at:
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+arduino
+http://localhost:5173
 
-### Build
+🔧 Build for Production
+npm run build
+Your optimized build will be in:
 
-To build all apps and packages, run the following command:
+dist/
+You can deploy on:
 
-```
-cd my-turborepo
+Vercel
 
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build
+Netlify
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build
-yarn dlx turbo build
-pnpm exec turbo build
-```
+Cloudflare Pages
 
-You can build a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+Surge
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build --filter=docs
+Firebase Hosting
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build --filter=docs
-yarn exec turbo build --filter=docs
-pnpm exec turbo build --filter=docs
-```
+## 🧱 Tech Stack
+React 18
 
-### Develop
+React Router DOM
 
-To develop all apps and packages, run the following command:
+Vite
 
-```
-cd my-turborepo
+TailwindCSS
 
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev
+Framer Motion
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev
-yarn exec turbo dev
-pnpm exec turbo dev
-```
+PostCSS
 
-You can develop a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+(Optional) Supabase
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev --filter=web
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to open an issue or submit a pull request.
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev --filter=web
-yarn exec turbo dev --filter=web
-pnpm exec turbo dev --filter=web
-```
+## 📄 License
+This project is licensed under the MIT License — free to use for personal or commercial projects.
 
-### Remote Caching
+## 👤 Author
+https://github.com/mitro1337
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo login
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo login
-yarn exec turbo login
-pnpm exec turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo link
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo link
-yarn exec turbo link
-pnpm exec turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
